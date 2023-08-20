@@ -1,0 +1,110 @@
+
+/*Connecting fonts-------------------*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:600,700&display=swap);
+/*zeroing*/
+* {
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    min-width: 320px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+/*Default styles---------------------*/
+body {
+    background-color: #000;
+    font-family: Montserrat;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+}
+/*Adaptive settings------------------*/
+[class*="__container"] {
+    max-width: 81.25rem;
+    padding-left: .9375rem;
+    padding-right: .9375rem;
+    margin: 0 auto;
+}
+/*Header----------------------------*/
+.header {
+    width: 100%;
+    top: 0;
+    bottom: 0;
+}
+.header__container {
+    display: flex;
+    position: relative;
+    top: 6rem;
+    justify-content: space-between;
+}
+.header__content {
+    display: flex;
+    gap: .9375rem;
+    align-items: center;
+}
+.header__logo {
+    width: 2.8125rem;
+    height: 2.8125rem;
+}
+.header__title {
+}
+.header__menu {
+}
+.menu {
+}
+.menu__list {
+}
+.menu__item {
+    display: flex;
+    gap: 1.5625rem;
+    text-align: center;
+}
+.menu__link {
+    display: inline-block;
+    gap: 1.5625rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.blue {
+    background-color: #1BAAFB;
+}
+.pink {
+    background-color: #FB1B86;
+}
+.grey {
+    background-color: #C4C4C4;
+}
