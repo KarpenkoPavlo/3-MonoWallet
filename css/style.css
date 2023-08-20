@@ -1,5 +1,5 @@
 
-/*Connecting fonts-------------------*/
+/*Connecting fonts*/
 @import url(https://fonts.googleapis.com/css?family=Montserrat:600,700&display=swap);
 /*zeroing*/
 * {
@@ -36,7 +36,7 @@ h6 {
     font-weight: inherit;
     font-size: inherit;
 }
-/*Default styles---------------------*/
+/*Default styles*/
 body {
     background-color: #000;
     font-family: Montserrat;
@@ -50,15 +50,16 @@ body {
     display: flex;
     flex-direction: column;
 }
-/*Adaptive settings------------------*/
+/*Adaptive settings*/
 [class*="__container"] {
     max-width: 81.25rem;
     padding-left: .9375rem;
     padding-right: .9375rem;
     margin: 0 auto;
 }
-/*Header----------------------------*/
+/*Header*/
 .header {
+    position: absolute;
     width: 100%;
     top: 0;
     bottom: 0;
@@ -66,8 +67,10 @@ body {
 .header__container {
     display: flex;
     position: relative;
+    gap: 20px;
     top: 6rem;
     justify-content: space-between;
+
 }
 .header__content {
     display: flex;
@@ -108,3 +111,22 @@ body {
 .grey {
     background-color: #C4C4C4;
 }
+.menu_cube {
+    
+}
+@media (max-width: 29.9375rem) {
+    .header__container {
+        flex-direction: column;
+    }
+}
+@media (max-width: 29.9375rem) {
+    .menu__item {
+        /* flex-direction: column; */
+    }
+    .menu__link {
+        width: 50%;
+        left: 50%;
+    }
+}
+
+
