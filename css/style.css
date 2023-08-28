@@ -2,26 +2,26 @@
 /*Connecting fonts*/
 @import url(https://fonts.googleapis.com/css?family=Montserrat:600,700&display=swap);
 /*zeroing*/
-* {
-    padding: 0;
-    margin: 0;
-    bottom: 0;
-}
 *,
 *::before,
 *::after {
+    padding: 0;
+    margin: 0;
+    bottom: 0;
     box-sizing: border-box;
 }
 html,
 body {
     height: 100%;
-    min-width: 320px;
+    line-height: 1;
 }
 a {
-    color: inherit;
     text-decoration: none;
+    color: inherit;
 }
-ul li {
+ul,
+ol,
+li {
     list-style: none;
 }
 img {
@@ -36,10 +36,22 @@ h6 {
     font-weight: inherit;
     font-size: inherit;
 }
+button,
+input {
+    font-weight: inherit;
+    font-size: inherit;
+    color: inherit;
+    font-family: inherit;
+}
+button {
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
+}
 /*Default styles*/
 body {
     background-color: #000;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     color: #fff;
     font-size: 20px;
     font-weight: 600;
@@ -50,57 +62,50 @@ body {
     display: flex;
     flex-direction: column;
 }
-/*Adaptive settings*/
+/*Adaptive settings------------------*/
 [class*="__container"] {
-    max-width: 81.25rem;
-    padding-left: .9375rem;
-    padding-right: .9375rem;
+    max-width: 1300px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
 }
-/*Header*/
+/*Header----------------------------*/
 .header {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    bottom: 0;
 }
 .header__container {
     display: flex;
-    position: relative;
-    gap: 20px;
-    top: 6rem;
-    justify-content: space-between;
-
+    padding-top: 96px;
+    column-gap: 10px;
 }
 .header__content {
     display: flex;
-    gap: .9375rem;
     align-items: center;
+    column-gap: 15px;
 }
 .header__logo {
-    width: 2.8125rem;
-    height: 2.8125rem;
 }
 .header__title {
 }
 .header__menu {
+    margin-left: auto;
 }
 .menu {
+}
+.header__item {
 }
 .menu__list {
 }
 .menu__item {
     display: flex;
-    gap: 1.5625rem;
-    text-align: center;
+    column-gap: 25px;
 }
 .menu__link {
-    display: inline-block;
-    gap: 1.5625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 50px;
     height: 50px;
     border-radius: 5px;
-    padding: 10px;
 }
 .blue {
     background-color: #1BAAFB;
@@ -111,22 +116,3 @@ body {
 .grey {
     background-color: #C4C4C4;
 }
-.menu_cube {
-    
-}
-@media (max-width: 29.9375rem) {
-    .header__container {
-        flex-direction: column;
-    }
-}
-@media (max-width: 29.9375rem) {
-    .menu__item {
-        /* flex-direction: column; */
-    }
-    .menu__link {
-        width: 50%;
-        left: 50%;
-    }
-}
-
-
