@@ -73,6 +73,8 @@ body {
 }
 .page__personal {
 }
+.page__token {
+}
 /*Adaptive settings------------------*/
 [class*="__container"] {
     max-width: 1300px;
@@ -519,3 +521,81 @@ body {
     }
 }
 /*personal end*/
+
+/*token start*/
+.token {
+    padding-top: 236px;
+    padding-bottom: 200px;
+}
+.token__container {
+}
+.token__title {
+    color: #FFF;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.token__title:not(:last-child) {
+    margin-bottom: 80px;
+}
+.token__main {
+}
+.main-token {
+    text-align: center;
+    color: #FFF;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1.42; /* 50/35 */
+    letter-spacing: 0.35px;
+}
+.main-token_01 {
+    border-radius: 25px 25px 0px 0px;
+    padding: 20px;
+    max-width: 1300px;
+    height: 90px;
+    background: #0B004C;
+}
+.main-token__02 {
+    max-width: 1300px;
+    padding: 125px 20px 125px 20px;
+    height: 300px;
+    background: #040CC0;
+}
+.main-token__03 {
+    max-width: 1300px;
+    padding: 35px 20px 35px 20px;
+    height: 120px;
+    background: #120080;
+}
+.main-token__04 {
+    border-radius: 0px 0px 25px 25px;
+    padding: 20px;
+    max-width: 1300px;
+    height: 90px;
+    background: #0B004C;
+}
+@media (max-width: 991.98px) {
+    .token {
+        padding-top: 179px;
+        padding-bottom: 140px;
+    }
+    .token__title {
+        font-size: 40px;
+    }
+    .token__main {
+        font-size: 30px;
+    }
+}
+@media (max-width: 479.98px) {
+    .token__title {
+        font-size: 30px;
+    }
+    .token__main {
+        font-size: 20px;
+    }
+    .main-token__02 {
+        height: 150px;
+        padding: 50px 20px 50px 20px;
+    }
+}
+/*token end*/
